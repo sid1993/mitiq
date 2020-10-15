@@ -1,6 +1,6 @@
 [![build](https://github.com/unitaryfund/mitiq/workflows/build/badge.svg)](https://github.com/unitaryfund/mitiq/actions)
 [![codecov](https://codecov.io/gh/unitaryfund/mitiq/branch/master/graph/badge.svg)](https://codecov.io/gh/unitaryfund/mitiq)
-[![Documentation Status](https://readthedocs.org/projects/mitiq/badge/?version=latest)](https://mitiq.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/mitiq/badge/?version=stable)](https://mitiq.readthedocs.io/en/stable/?badge=stable)
 [![PyPI version](https://badge.fury.io/py/mitiq.svg)](https://badge.fury.io/py/mitiq)
 [![arXiv](https://img.shields.io/badge/arXiv-2009.04417-<COLOR>.svg)](https://arxiv.org/abs/2009.04417)
 [![Unitary Fund](https://img.shields.io/badge/Supported%20By-UNITARY%20FUND-brightgreen.svg?style=for-the-badge)](http://unitary.fund)
@@ -49,7 +49,7 @@ available to the user.
 
 ## Getting started
 
-See the [getting started](https://mitiq.readthedocs.io/en/latest/guide/guide-getting-started.html) guide in
+See the [getting started](https://mitiq.readthedocs.io/en/stable/guide/guide-getting-started.html) guide in
 [Mitiq's documentation](https://mitiq.readthedocs.io) for a complete walkthrough of how to use mitiq. For
 a quick preview, check out the following snippet for a simple example of Mitiq in action:
 
@@ -90,13 +90,13 @@ Error in simulation (with mitigation): 0.000519
 
 ## Error mitigation techniques
 
-Mitiq currently implements [zero-noise extrapolation](https://mitiq.readthedocs.io/en/latest/guide/guide-zne.html) and 
+Mitiq currently implements [zero-noise extrapolation](https://mitiq.readthedocs.io/en/stable/guide/guide-zne.html) and 
 is designed to support [additional techniques](https://github.com/unitaryfund/mitiq/wiki).
 
 ## Documentation
 
 Mitiq's documentation is hosted at [mitiq.readthedocs.io](https://mitiq.readthedocs.io). A PDF version of the latest 
-release can be found [here](https://mitiq.readthedocs.io/_/downloads/en/latest/pdf/).
+release can be found [here](https://mitiq.readthedocs.io/_/downloads/en/stable/pdf/).
 
 ## Developer information
 
