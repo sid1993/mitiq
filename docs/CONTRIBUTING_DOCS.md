@@ -99,6 +99,7 @@ classes and functions to add, to comment them, as well as exclude them.
 
 #### Build the documentation locally
 - To build the documentation, from `bash`, move to the `docs` folder and run
+
 ```bash
 sphinx-build -b html source build
 ```

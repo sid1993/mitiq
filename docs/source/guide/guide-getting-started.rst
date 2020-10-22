@@ -16,6 +16,8 @@ similarly as you will see in :ref:`Qiskit Mitigation <qiskit_getting_started>`.
 
 Multi-platform Framework
 ----------------------------------------------
+.. TODO: Figure here could be helpful
+
 In ``mitiq``, a "back-end" is a function that executes quantum programs. A
 "front-end" is a library/language that constructs quantum programs. ``mitiq``
 lets you mix and match these. For example, you could write a quantum program in
@@ -24,9 +26,10 @@ lets you mix and match these. For example, you could write a quantum program in
 Back-ends are abstracted to functions called ``executors`` that always accept
 a quantum program, sometimes accept other arguments, and always
 return an expectation value as a float. You can see some examples of different
-executors for common packages :ref:`here <guide-executors>` and in this
-getting started. If your quantum programming interface of choice can be used
-to make a Python function with this type, then it can be used with mitiq.
+executors for common packages :ref:`in the guide on executors <guide-executors>` 
+and in this getting started. If your quantum programming interface of choice 
+can be used to make a Python function with this type, then it can be used with 
+mitiq.
 
 
 Error Mitigation with Zero-Noise Extrapolation
@@ -139,6 +142,7 @@ error-mitigated version.
    You can read more about functools partial application
    `here <https://docs.python.org/3/library/functools.html#functools.partial>`_.
 
+..TODO: Link out Richardson extrapolation
 
 The default implementation uses Richardson extrapolation to extrapolate the
 expectation value to the zero noise limit :cite:`Temme_2017_PRL`. ``Mitiq``
@@ -160,12 +164,12 @@ different ones.
     Mitigated error with the linear method is 0.00638
 
 You can read more about the ``Factory`` objects that are built into ``mitiq``
-and how to create your own :ref:`here <guide-factories>`.
+and how to create your own :ref:`in the guide on factories <guide-zne-factories>`.
 
 Another key step in zero-noise extrapolation is to choose how your circuit is
 transformed to scale the noise. You can read more about the noise scaling
 methods built into ``mitiq`` and how to create your
-own :ref:`here <guide-folding>`.
+own :ref:`in the guide on unitary folding <guide-zne-folding>`.
 
 .. _qiskit_getting_started:
 

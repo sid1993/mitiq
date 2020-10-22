@@ -500,4 +500,4 @@ More details can be found in the ``qiskit``
 Qiskit: Hardware
 ------------------------------------------------------------
 An example of an executor that runs on IBMQ hardware is given
-:ref:`here <high_level_usage>`.
+in the :ref:`documentation on Mitiq use with IBM hardware  <high_level_usage>`.

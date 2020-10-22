@@ -10,10 +10,10 @@ Users Guide
    :maxdepth: 2
 
    guide-overview.rst
-   guide-getting-started.rst
-   guide-executors.rst
-   guide-zne.rst
    guide-error-mitigation.rst
+   guide-getting-started.rst
+   guide-zne.rst
+   guide-executors.rst
    guide-ibmq-backends.rst
    guide-qaoa-landscape.rst
    guide-hamiltonians.rst

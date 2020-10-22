@@ -5,6 +5,7 @@ Zero Noise Extrapolation
 *********************************************
 Zero noise extrapolation has two main components: noise scaling and then extrapolation.
 
+.. _guide-zne-folding:
 ======================================
 Digital noise scaling: Unitary Folding
 ======================================
@@ -25,10 +26,11 @@ This makes the circuit longer (adding more noise) while keeping its effect uncha
 *unitary folding*. If `G` is a subset of the gates in a circuit, we call it `local folding`.
 If `G` is the entire circuit, we call it `global folding`.
 
-In ``mitiq``, folding functions input a circuit and a *scale factor* (or simply *scale*), i.e., a floating point value
+In ``mitiq``, folding functions take a circuit and a *scale factor* (or simply *scale*), i.e., a floating point value
 which corresponds to (approximately) how much the length of the circuit is scaled.
 The minimum scale factor is one (which corresponds to folding no gates). A scale factor of three corresponds to folding
 all gates locally. Scale factors beyond three begin to fold gates more than once.
+.. TODO: Not quite clear here what the scale factor means
 
 ---------------------
 Local folding methods
@@ -154,6 +156,8 @@ of the folded circuit (a Cirq circuit), one can use the keyword argument ``retur
 Folding gates by fidelity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. TODO: there is no explanation of the fidelities
+
 In local folding methods, gates can be folded according to custom fidelities by passing the keyword argument
 ``fidelities`` into a local folding method. This argument should be a dictionary where each key is a string which
 specifies the gate and the value of the key is the fidelity of that gate. An example is shown below where we set the
@@ -267,7 +271,7 @@ This function can then be used with ``mitiq.execute_with_zne`` as an option to s
     # Variables circ and scale are a circuit to fold and a scale factor, respectively
     zne = mitiq.execute_with_zne(circuit, executor, scale_noise=my_custom_folding_function)
 
-
+.. _guide-zne-factories:
 ====================================================
 Classical fitting and extrapolation: Factory Objects
 ====================================================
